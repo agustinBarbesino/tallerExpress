@@ -7,4 +7,4 @@ npm i cors
 npm i morgan
 
 crear archivo .env y configurar
-PORT = 8080
+PORT = 8081
