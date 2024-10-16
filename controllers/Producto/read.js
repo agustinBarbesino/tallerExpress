@@ -15,7 +15,7 @@ let allProductos = async (req, res) => {
 
 let productoPorMarca = async (req, res) => {
     try {
-        marcaQuery = req.params.marca
+        let marcaQuery = req.params.marca
         let all = await Producto.find({marca : marcaQuery})
         return res.status(200).json({
             response: all
@@ -29,7 +29,7 @@ let productoPorMarca = async (req, res) => {
 
 let productoPorTipo = async (req, res) => {
     try {
-        tipoQuery = req.params.tipo
+        let tipoQuery = req.params.tipo
         let all = await Producto.find({tipo : tipoQuery})
         return res.status(200).json({
             response: all

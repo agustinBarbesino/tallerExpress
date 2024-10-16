@@ -15,7 +15,7 @@ let allEmpleados = async (req, res) => {
 
 let empleadoPorCargo = async (req, res) => {
     try {
-        cargoQuery = req.params.cargo
+        let cargoQuery = req.params.cargo
         let all = await Empleado.find({cargo : cargoQuery})
         return res.status(200).json({
             response: all
@@ -29,7 +29,7 @@ let empleadoPorCargo = async (req, res) => {
 
 let empleadoPorSalario = async (req, res) => {
     try {
-        salarioQuery = req.params.salario
+        let salarioQuery = req.params.salario
         let all = await Empleado.find({salario : salarioQuery})
         return res.status(200).json({
             response: all
