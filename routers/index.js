@@ -5,8 +5,8 @@ import productoRouter from './producto.js'
 
 const indexRouter = Router()
 
-indexRouter.use('/tienda', tiendaRouter)
-indexRouter.use('/empleado', empleadoRouter)
-indexRouter.use('/producto', productoRouter)
+indexRouter.use('/tiendas', tiendaRouter)
+indexRouter.use('/empleados', empleadoRouter)
+indexRouter.use('/productos', productoRouter)
 
 export default indexRouter
